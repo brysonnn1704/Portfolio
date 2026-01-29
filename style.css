@@ -14,7 +14,7 @@ body {
     color: #e5e7eb;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 header {
     background: #020617;
     border-bottom: 1px solid #1e293b;
@@ -45,8 +45,26 @@ nav ul {
 nav a {
     color: #e5e7eb;
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
 #menu-toggle {
     display: none;
 }
@@ -63,43 +81,18 @@ nav a {
     margin: 4px 0;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     padding: 4rem 1rem;
     text-align: center;
     background: #020617;
 }
 
-/* ABOUT VIDEO */
-.video-bg {
-    position: relative;
-    overflow: hidden;
-}
-
-.video-container {
-    position: absolute;
-    inset: 0;
-    filter: blur(10px);
-    transform: scale(1.2);
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(2, 6, 23, 0.85);
-}
-
-.about-content-wrapper {
-    position: relative;
+/* ================= ABOUT ================= */
+.about {
+    padding: 3rem 1rem;
     max-width: 1100px;
     margin: auto;
-    padding: 4rem 1rem;
 }
 
 .about-content {
@@ -111,9 +104,14 @@ nav a {
 .about img {
     width: 220px;
     border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-/* SKILLS */
+.about img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= SKILLS ================= */
 .skills {
     background: #020617;
     padding: 3rem 1rem;
@@ -133,9 +131,15 @@ nav a {
     color: #020617;
     padding: 10px;
     border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* PROJECTS */
+.skills span:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* ================= PROJECTS ================= */
 .projects {
     padding: 3rem 1rem;
     max-width: 1100px;
@@ -152,14 +156,30 @@ nav a {
     background: #020617;
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
 }
 
 .project-card a {
     color: #38bdf8;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* CONTACT */
+.project-card a::after {
+    content: " →";
+    transition: margin-left 0.3s ease;
+}
+
+.project-card a:hover::after {
+    margin-left: 6px;
+}
+
+/* ================= CONTACT ================= */
 .contact {
     background: #020617;
     padding: 3rem 1rem;
@@ -186,9 +206,15 @@ button {
     border: none;
     color: #020617;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* FOOTER */
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
 footer {
     background: #020617;
     text-align: center;
@@ -199,9 +225,14 @@ footer {
     color: #38bdf8;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* RESPONSIVE */
+.socials a:hover {
+    color: #ffffff;
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -227,9 +258,5 @@ footer {
     .about-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .video-container {
-        display: none;
     }
 }
