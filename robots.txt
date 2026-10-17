@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brysonnn1704.github.io/Portfolio/sitemap.xml
+Sitemap: https://brysonalmeida.com/sitemap.xml
