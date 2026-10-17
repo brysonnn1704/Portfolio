@@ -1,0 +1,26 @@
+{
+  "name": "bryson-portfolio",
+  "version": "2.0.0",
+  "description": "Personal portfolio of Bryson P Almeida — UI/UX Designer & Front-End Developer",
+  "private": true,
+  "scripts": {
+    "build": "npx esbuild style.css --minify --outfile=style.min.css && npx esbuild main.js --minify --outfile=main.min.js",
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080",
+    "audit": "node scripts/audit.js"
+  },
+  "keywords": [
+    "portfolio",
+    "ui-ux",
+    "frontend-developer",
+    "design-system",
+    "react",
+    "japanese-minimalism",
+    "bryson-almeida"
+  ],
+  "author": "Bryson P Almeida",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
