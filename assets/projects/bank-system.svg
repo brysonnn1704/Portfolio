@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="bk-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#1C2541"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#bk-bg)"/>
+  
+  <!-- Window Frame Header -->
+  <rect x="24" y="24" width="552" height="42" rx="10" fill="#1C2541" stroke="#3A506B"/>
+  <circle cx="44" cy="45" r="5" fill="#EF4444"/>
+  <circle cx="60" cy="45" r="5" fill="#F59E0B"/>
+  <circle cx="76" cy="45" r="5" fill="#10B981"/>
+  <text x="100" y="49" fill="#E0E1DD" font-family="system-ui, sans-serif" font-size="12" font-weight="600">BankMANCRCE • JavaFX Enterprise Banking Suite</text>
+  <rect x="420" y="33" width="144" height="24" rx="12" fill="#48CAE4" fill-opacity="0.15"/>
+  <text x="434" y="49" fill="#90E0EF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Google OAuth 2.0 🔒</text>
+
+  <!-- Left Sidebar / Stats -->
+  <g transform="translate(24, 78)">
+    <rect width="180" height="276" rx="10" fill="#1C2541" stroke="#3A506B"/>
+    <!-- User Profile Badge -->
+    <circle cx="40" cy="38" r="18" fill="#48CAE4" fill-opacity="0.2"/>
+    <text x="32" y="44" fill="#90E0EF" font-size="14">👤</text>
+    <text x="68" y="34" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Bryson A.</text>
+    <text x="68" y="48" fill="#778DA9" font-family="system-ui, sans-serif" font-size="9">Tier 1 Account</text>
+    
+    <!-- Balance Card -->
+    <rect x="14" y="70" width="152" height="74" rx="8" fill="#0B132B" stroke="#48CAE4" stroke-opacity="0.3"/>
+    <text x="24" y="90" fill="#778DA9" font-family="system-ui, sans-serif" font-size="10">Available Balance</text>
+    <text x="24" y="116" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="18" font-weight="800">₹ 2,48,920</text>
+    <text x="24" y="132" fill="#10B981" font-family="system-ui, sans-serif" font-size="9">+4.2% interest credit</text>
+
+    <!-- Navigation tabs -->
+    <rect x="14" y="156" width="152" height="32" rx="6" fill="#3A506B" fill-opacity="0.4"/>
+    <text x="26" y="176" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">📊 Transactions</text>
+
+    <rect x="14" y="194" width="152" height="32" rx="6" fill="#0B132B"/>
+    <text x="26" y="214" fill="#778DA9" font-family="system-ui, sans-serif" font-size="11">💸 Instant Transfer</text>
+
+    <rect x="14" y="232" width="152" height="32" rx="6" fill="#0B132B"/>
+    <text x="26" y="252" fill="#778DA9" font-family="system-ui, sans-serif" font-size="11">🛡️ Admin Audit Logs</text>
+  </g>
+
+  <!-- Right: Transaction Table & Database Feed -->
+  <g transform="translate(216, 78)">
+    <rect width="360" height="276" rx="10" fill="#1C2541" stroke="#3A506B"/>
+    <text x="20" y="32" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Recent Secure Ledger Activity</text>
+    <rect x="250" y="18" width="94" height="20" rx="10" fill="#10B981" fill-opacity="0.15"/>
+    <text x="260" y="32" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="9" font-weight="600">MySQL Linked</text>
+
+    <!-- Table header -->
+    <rect x="16" y="46" width="328" height="26" rx="4" fill="#0B132B"/>
+    <text x="26" y="63" fill="#778DA9" font-family="system-ui, sans-serif" font-size="10">DESCRIPTION</text>
+    <text x="180" y="63" fill="#778DA9" font-family="system-ui, sans-serif" font-size="10">STATUS</text>
+    <text x="280" y="63" fill="#778DA9" font-family="system-ui, sans-serif" font-size="10">AMOUNT</text>
+
+    <!-- Row 1 -->
+    <line x1="16" y1="108" x2="344" y2="108" stroke="#3A506B" stroke-width="0.5"/>
+    <text x="26" y="94" fill="#E0E1DD" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Cloud Storage Server</text>
+    <text x="180" y="94" fill="#10B981" font-family="system-ui, sans-serif" font-size="10">SUCCESS</text>
+    <text x="280" y="94" fill="#EF4444" font-family="system-ui, sans-serif" font-size="11" font-weight="700">- ₹ 4,200</text>
+
+    <!-- Row 2 -->
+    <line x1="16" y1="146" x2="344" y2="146" stroke="#3A506B" stroke-width="0.5"/>
+    <text x="26" y="132" fill="#E0E1DD" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Salary Credit (Intern)</text>
+    <text x="180" y="132" fill="#10B981" font-family="system-ui, sans-serif" font-size="10">SUCCESS</text>
+    <text x="280" y="132" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">+ ₹ 25,000</text>
+
+    <!-- Row 3 -->
+    <line x1="16" y1="184" x2="344" y2="184" stroke="#3A506B" stroke-width="0.5"/>
+    <text x="26" y="170" fill="#E0E1DD" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Security Audit Tooling</text>
+    <text x="180" y="170" fill="#10B981" font-family="system-ui, sans-serif" font-size="10">SUCCESS</text>
+    <text x="280" y="170" fill="#EF4444" font-family="system-ui, sans-serif" font-size="11" font-weight="700">- ₹ 1,850</text>
+
+    <!-- Bottom summary box -->
+    <rect x="16" y="202" width="328" height="58" rx="8" fill="#0B132B" stroke="#3A506B"/>
+    <text x="28" y="224" fill="#90E0EF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Role-Based Access Control (RBAC)</text>
+    <text x="28" y="242" fill="#778DA9" font-family="system-ui, sans-serif" font-size="10">Admin Dashboard with audit logging, account freeze & transaction rollback</text>
+  </g>
+</svg>

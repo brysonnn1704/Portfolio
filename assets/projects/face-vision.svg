@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="fv-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#fv-bg)"/>
+
+  <!-- Header -->
+  <rect x="24" y="24" width="552" height="42" rx="10" fill="#1E293B" stroke="#334155"/>
+  <circle cx="44" cy="45" r="5" fill="#EF4444"/>
+  <circle cx="60" cy="45" r="5" fill="#F59E0B"/>
+  <circle cx="76" cy="45" r="5" fill="#10B981"/>
+  <text x="100" y="49" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Face2Beats Vision • OpenCV Real-Time Biometric Attendance</text>
+  <rect x="440" y="33" width="124" height="24" rx="12" fill="#10B981" fill-opacity="0.15"/>
+  <text x="452" y="49" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">FPS: 60.0 • LIVE</text>
+
+  <!-- Left: Computer Vision Video Feed Mockup -->
+  <g transform="translate(24, 78)">
+    <rect width="320" height="276" rx="10" fill="#090D16" stroke="#334155"/>
+    <!-- Simulated Camera Viewfinder Grid -->
+    <path d="M 20 40 L 40 40 M 20 40 L 20 60 M 300 40 L 280 40 M 300 40 L 300 60 M 20 256 L 40 256 M 20 256 L 20 236 M 300 256 L 280 256 M 300 256 L 300 236" stroke="#60A5FA" stroke-width="2"/>
+    
+    <!-- Face Silhouette / Target -->
+    <ellipse cx="160" cy="130" rx="46" ry="56" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+    <!-- Facial Landmark Points -->
+    <circle cx="144" cy="120" r="3" fill="#38BDF8"/>
+    <circle cx="176" cy="120" r="3" fill="#38BDF8"/>
+    <circle cx="160" cy="136" r="2" fill="#38BDF8"/>
+    <line x1="150" y1="152" x2="170" y2="152" stroke="#38BDF8" stroke-width="2"/>
+    
+    <!-- Recognition Box -->
+    <rect x="100" y="60" width="120" height="150" rx="4" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="6 3"/>
+    <rect x="100" y="38" width="120" height="22" rx="4" fill="#10B981"/>
+    <text x="106" y="53" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Bryson P Almeida (98.7%)</text>
+
+    <!-- Bottom Camera Status -->
+    <rect x="16" y="230" width="288" height="32" rx="6" fill="#1E293B"/>
+    <circle cx="32" cy="246" r="4" fill="#10B981"/>
+    <text x="44" y="250" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="10">Attendance Verified • Logged to CSV & DB</text>
+  </g>
+
+  <!-- Right: Verification Metrics -->
+  <g transform="translate(360, 78)">
+    <rect width="216" height="84" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Recognition Accuracy</text>
+    <text x="16" y="58" fill="#10B981" font-family="system-ui, sans-serif" font-size="22" font-weight="800">99.2%</text>
+    <text x="16" y="74" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Haar Cascade + LBPH Algorithm</text>
+
+    <rect y="96" width="216" height="84" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="124" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Anti-Spoofing Detection</text>
+    <text x="16" y="152" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Liveness Checked</text>
+    <text x="16" y="168" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Blink & micro-motion analysis</text>
+
+    <rect y="192" width="216" height="84" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="220" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Automated Export</text>
+    <text x="16" y="246" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Real-Time Sync</text>
+    <text x="16" y="264" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Instant logging into MySQL ledger</text>
+  </g>
+</svg>

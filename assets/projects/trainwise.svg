@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="tw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#tw-bg)"/>
+  
+  <!-- App Header -->
+  <rect x="24" y="24" width="552" height="48" rx="12" fill="#1E293B" stroke="#334155"/>
+  <rect x="40" y="36" width="24" height="24" rx="6" fill="#3B82F6"/>
+  <text x="45" y="53" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="900">T</text>
+  <text x="74" y="52" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">TrainWise Mumbai</text>
+  <rect x="200" y="38" width="90" height="20" rx="10" fill="#3B82F6" fill-opacity="0.2"/>
+  <text x="210" y="52" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Western Line</text>
+
+  <rect x="460" y="36" width="100" height="24" rx="12" fill="#10B981" fill-opacity="0.15"/>
+  <circle cx="474" cy="48" r="4" fill="#10B981"/>
+  <text x="484" y="52" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Live Demo</text>
+
+  <!-- Left: Transit Feed & Next Trains -->
+  <g transform="translate(24, 88)">
+    <rect width="320" height="268" rx="12" fill="#1E293B" stroke="#334155"/>
+    <text x="18" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">UPCOMING TRAINS • ANDHERI TO CHURCHGATE</text>
+
+    <!-- Train 1 -->
+    <g transform="translate(16, 46)">
+      <rect width="288" height="62" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+      <rect x="12" y="12" width="28" height="20" rx="4" fill="#EF4444"/>
+      <text x="17" y="26" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="800">FAST</text>
+      <text x="48" y="27" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">09:42 AM</text>
+      <text x="48" y="44" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Churchgate (12 Car) • Platform 4</text>
+      <rect x="232" y="16" width="44" height="28" rx="6" fill="#3B82F6" fill-opacity="0.2"/>
+      <text x="240" y="34" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="12" font-weight="700">2 min</text>
+    </g>
+
+    <!-- Train 2 -->
+    <g transform="translate(16, 116)">
+      <rect width="288" height="62" rx="8" fill="#0F172A" stroke="#334155"/>
+      <rect x="12" y="12" width="28" height="20" rx="4" fill="#3B82F6"/>
+      <text x="16" y="26" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="800">SLOW</text>
+      <text x="48" y="27" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">09:47 AM</text>
+      <text x="48" y="44" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Borivali to CCG • Platform 3</text>
+      <rect x="232" y="16" width="44" height="28" rx="6" fill="#334155"/>
+      <text x="240" y="34" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">7 min</text>
+    </g>
+
+    <!-- Train 3 -->
+    <g transform="translate(16, 186)">
+      <rect width="288" height="62" rx="8" fill="#0F172A" stroke="#334155"/>
+      <rect x="12" y="12" width="28" height="20" rx="4" fill="#10B981"/>
+      <text x="18" y="26" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="800">AC</text>
+      <text x="48" y="27" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">09:55 AM</text>
+      <text x="48" y="44" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Virar Fast (AC Coach) • Platform 5</text>
+      <rect x="232" y="16" width="44" height="28" rx="6" fill="#334155"/>
+      <text x="236" y="34" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">15 min</text>
+    </g>
+  </g>
+
+  <!-- Right: Multimodal Transit Badges -->
+  <g transform="translate(360, 88)">
+    <rect width="216" height="82" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="28" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Suburban Network</text>
+    <text x="16" y="56" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Western • Central</text>
+    <text x="16" y="72" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Harbour & Trans-Harbour Lines</text>
+
+    <rect y="92" width="216" height="82" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="120" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Metro & BEST Integration</text>
+    <text x="16" y="148" fill="#A855F7" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Lines 1, 2A, 7</text>
+    <text x="16" y="164" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Real-time bus feeder connecting routes</text>
+
+    <rect y="184" width="216" height="84" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="16" y="212" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Tech Architecture</text>
+    <text x="16" y="238" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="700">React + Vite + Zustand</text>
+    <text x="16" y="256" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Fast client state & offline transit caching</text>
+  </g>
+</svg>
