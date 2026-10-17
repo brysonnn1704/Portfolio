@@ -21,6 +21,7 @@
   "author": "Bryson P Almeida",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.28.2"
+    "esbuild": "^0.28.2",
+    "vercel": "^64.5.0"
   }
 }
