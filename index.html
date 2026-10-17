@@ -1,132 +1,903 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryson Almeida | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryson P Almeida — UI/UX Designer & Front-End Developer</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Bryson P Almeida — UI/UX Designer & Front-End Developer">
+  <meta name="description" content="Portfolio of Bryson P Almeida, a Computer Engineering student, UI/UX Designer, and Front-End Developer based in Mumbai. Crafting intuitive digital experiences and resilient civic tech.">
+  <meta name="author" content="Bryson P Almeida">
+  <meta name="theme-color" content="#FAF8F5">
+  <link rel="canonical" href="https://brysonnn1704.github.io/Portfolio/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brysonnn1704.github.io/Portfolio/">
+  <meta property="og:title" content="Bryson P Almeida — UI/UX Designer & Front-End Developer">
+  <meta property="og:description" content="Crafting intuitive digital experiences, civic technology, and resilient systems. Explore featured case studies including RAKSHA-ZONE, Digi Sathi, and TrainWise Mumbai.">
+  <meta property="og:image" content="https://brysonnn1704.github.io/Portfolio/og-image.jpg">
+  <meta property="og:site_name" content="Bryson P Almeida Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://brysonnn1704.github.io/Portfolio/">
+  <meta name="twitter:title" content="Bryson P Almeida — UI/UX Designer & Front-End Developer">
+  <meta name="twitter:description" content="Crafting intuitive digital experiences, civic technology, and resilient systems. Explore featured case studies.">
+  <meta name="twitter:image" content="https://brysonnn1704.github.io/Portfolio/og-image.jpg">
+
+  <!-- Favicon suite -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Performance: Preload Critical Hero Avatar -->
+  <link rel="preload" as="image" href="profile-450.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
+
+  <!-- Minified Production Stylesheet -->
+  <link rel="stylesheet" href="style.min.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://brysonnn1704.github.io/Portfolio/#person",
+        "name": "Bryson P Almeida",
+        "jobTitle": "UI/UX Designer & Front-End Developer",
+        "url": "https://brysonnn1704.github.io/Portfolio/",
+        "sameAs": [
+          "https://github.com/brysonnn1704",
+          "https://www.youtube.com/@sauceop8165"
+        ],
+        "knowsAbout": [
+          "UI/UX Design",
+          "Front-End Development",
+          "React",
+          "JavaScript",
+          "Cybersecurity",
+          "Cloud Computing",
+          "Video Editing"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://brysonnn1704.github.io/Portfolio/#website",
+        "url": "https://brysonnn1704.github.io/Portfolio/",
+        "name": "Bryson P Almeida Portfolio",
+        "publisher": {
+          "@id": "https://brysonnn1704.github.io/Portfolio/#person"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<div class="page-overlay">
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- ================= NAVBAR ================= -->
-<header>
-    <div class="nav-container">
-        <h1 class="logo">Bryson</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Bryson P Almeida Home">
+        bryson<span class="dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation">
+        <ul class="desktop-nav">
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Craft &amp; Skills</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#video" class="nav-link">Video &amp; Motion</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Cluster -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Header CTA -->
+        <a href="#contact" class="btn-header-cta" data-cursor-label="Say Hey!">
+          Let's Chat 💬
+        </a>
+
+        <!-- Mobile Hamburger Button (Japanese 3-dot style) -->
+        <button id="mobile-menu-button" class="hamburger-button" type="button" aria-label="Open mobile navigation menu" aria-controls="mobile-drawer" aria-expanded="false">
+          <span class="dot-bar" aria-hidden="true"></span>
+          <span class="dot-bar" aria-hidden="true"></span>
+          <span class="dot-bar" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
-</header>
+  </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-    <h2>Hi, I'm Bryson Almeida</h2>
-    <p>Aspiring Computer Engineer | Networking Enthusiast | Video Editor</p>
-</section>
+  <!-- ================= MOBILE DRAWER ================= -->
+  <div id="mobile-drawer-backdrop" class="mobile-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Drawer" inert hidden>
+    <div class="drawer-header">
+      <span class="brand-logo">bryson<span class="dot">.</span></span>
+      <button id="mobile-menu-close" class="modal-close-btn" type="button" aria-label="Close mobile navigation">✕</button>
+    </div>
+    
+    <ul class="drawer-nav">
+      <li>
+        <a href="#projects" class="drawer-link mobile-nav-link">
+          <span>Featured Work</span>
+          <span class="ja-sub">作品</span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="drawer-link mobile-nav-link">
+          <span>Craft &amp; Skills</span>
+          <span class="ja-sub">スキル</span>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="drawer-link mobile-nav-link">
+          <span>About Me</span>
+          <span class="ja-sub">プロフィール</span>
+        </a>
+      </li>
+      <li>
+        <a href="#video" class="drawer-link mobile-nav-link">
+          <span>Video &amp; Motion</span>
+          <span class="ja-sub">映像制作</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="drawer-link mobile-nav-link">
+          <span>Contact</span>
+          <span class="ja-sub">連絡</span>
+        </a>
+      </li>
+    </ul>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about">
-    <h2>About Me</h2>
+    <div class="drawer-footer">
+      <button id="theme-toggle-mobile" class="btn-secondary" type="button" style="width: 100%; justify-content: center;">
+        <span class="theme-icon">🌙</span> Switch Theme
+      </button>
+      <a href="mailto:brysoncollege12345@gmail.com" class="btn-primary" style="width: 100%; justify-content: center;">
+        brysoncollege12345@gmail.com
+      </a>
+    </div>
+  </aside>
 
-    <div class="about-content">
-        <img src="profile.jpg" alt="Bryson Almeida">
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content">
 
-        <p>
-            I am a Computer Engineering student pursuing B.Tech with a diploma
-            in Cloud Computing and Big Data. I have a strong interest in
-            <strong>Networking, Cybersecurity, and System Administration</strong>.
-            I also enjoy <strong>video editing and visual storytelling</strong>.
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy -->
+          <div class="hero-content">
+            <div class="greeting-pill">
+              <span class="live-indicator" aria-hidden="true"></span>
+              <span>Hey! 🤝 こんにちは</span>
+              <span style="opacity: 0.4;">•</span>
+              <span>Open to Summer 2026 roles</span>
+            </div>
+
+            <h1 id="hero-heading" class="hero-headline">
+              Crafting <span class="highlight">intuitive</span> interfaces &amp; resilient systems.
+            </h1>
+
+            <p class="hero-lead">
+              I'm <strong>Bryson P Almeida</strong> — a Computer Engineering student (B.Tech with Diploma in Cloud Computing &amp; Big Data), aspiring UI/UX Designer, and Front-End Developer based in Mumbai. I combine visual aesthetics, accessible UX, and robust engineering to turn complex ideas into delightful digital products.
+            </p>
+
+            <!-- Presence & Local Clock -->
+            <div class="presence-bar">
+              <div class="presence-item">
+                <span aria-hidden="true">📍</span>
+                <span><strong>Mumbai:</strong> <span id="mumbai-clock">Loading...</span></span>
+              </div>
+              <div class="presence-item">
+                <span aria-hidden="true">🎓</span>
+                <span>B.Tech Computer Engineering</span>
+              </div>
+              <div class="presence-item">
+                <span aria-hidden="true">🎬</span>
+                <span>Ex-Video Editor @ Chrisel Technolab</span>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="hero-cta-cluster">
+              <a href="#projects" class="btn-primary" data-cursor-label="Explore">
+                Explore Work ⇣
+              </a>
+              <a href="#contact" class="btn-secondary" data-cursor-label="Say Hey">
+                Get in Touch ✉️
+              </a>
+              <button type="button" class="btn-secondary copy-email-btn" data-cursor-label="Copy">
+                Copy Email 📋
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Visual / Avatar Card -->
+          <div class="hero-visual-card">
+            <div class="avatar-wrapper">
+              <div class="avatar-inner">
+                <picture>
+                  <source srcset="profile-450.webp 450w, profile-300.webp 300w" type="image/webp">
+                  <img src="profile-square.jpg" alt="Bryson P Almeida - UI/UX Designer and Front-End Developer" class="avatar-img" width="450" height="450" fetchpriority="high" decoding="async">
+                </picture>
+              </div>
+            </div>
+
+            <!-- Floating Stickers -->
+            <div class="hero-sticker sticker-1" style="--rot: -5deg;">
+              <span aria-hidden="true">✨</span> Figma &amp; UI/UX
+            </div>
+            <div class="hero-sticker sticker-2" style="--rot: 4deg;">
+              <span aria-hidden="true">⚡</span> React &amp; Next.js
+            </div>
+            <div class="hero-sticker sticker-3" style="--rot: -3deg;">
+              <span aria-hidden="true">🛡️</span> Security &amp; Cloud
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS (CASES) -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span>Case Studies</span>
+            <span class="label-ja">• 制作実績</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">
+            Featured Projects &amp; Digital Products
+          </h2>
+          <p class="section-desc">
+            A curated selection of real-world platforms, civic technology initiatives, and full-stack software built with careful attention to usability and system reliability.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs reveal-on-scroll" role="tablist" aria-label="Project Category Filter">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All (6)</button>
+          <button type="button" class="filter-btn" data-filter="civic" role="tab" aria-selected="false">Civic &amp; Emergency Tech (2)</button>
+          <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; UI/UX (2)</button>
+          <button type="button" class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Systems &amp; Security (2)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 01: RAKSHA-ZONE -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="civic">
+            <div class="case-preview">
+              <span class="case-index">01</span>
+              <span class="case-status-badge">🟢 Live on Vercel</span>
+              <img src="assets/projects/raksha-zone.svg" alt="RAKSHA-ZONE GIS Disaster Planning Platform Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">Civic &amp; Emergency GIS</span>
+              <h3 class="case-title">RAKSHA-ZONE — Multi-Hazard Relocation Platform</h3>
+              <p class="case-desc">
+                GIS decision-support system designed for SIH26191 (Ministry of Home Affairs / NDRF Disaster Management). Identifies multi-hazard red zones, computes safe shelter carrying capacities, and forecasts emergency lifeline resources.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">TypeScript</span>
+                <span class="pill-chip">React</span>
+                <span class="pill-chip">GIS Engine</span>
+                <span class="pill-chip">Tailwind CSS</span>
+                <span class="pill-chip">NDRF SIH</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://raksha-zone.vercel.app" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="Open">
+                  Live Platform ↗
+                </a>
+                <a href="https://github.com/brysonnn1704/RAKSHA-ZONE" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="raksha-zone">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: DIGI SATHI -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="civic">
+            <div class="case-preview">
+              <span class="case-index">02</span>
+              <span class="case-status-badge">⚡ Offline-First PWA</span>
+              <img src="assets/projects/digi-sathi.svg" alt="Digi Sathi Elderly Digital Literacy Platform Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">Inclusive Accessibility</span>
+              <h3 class="case-title">Digi Sathi (डिजी साथी) — Digital Literacy Platform</h3>
+              <p class="case-desc">
+                An offline-first platform helping elderly and low-digital-literacy users master smartphone services. Features multilingual voice guidance (Hindi, Marathi, English), simulated zero-risk UPI/WhatsApp sandboxes, and scam URL analysis.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">JavaScript</span>
+                <span class="pill-chip">Offline PWA</span>
+                <span class="pill-chip">Speech Synthesis</span>
+                <span class="pill-chip">Scam Heuristics</span>
+                <span class="pill-chip">WCAG AAA</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://github.com/brysonnn1704/digital-literacy-app" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub Repository ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="digi-sathi">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: TRAINWISE MUMBAI -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="web">
+            <div class="case-preview">
+              <span class="case-index">03</span>
+              <span class="case-status-badge">🟢 Live on Vercel</span>
+              <img src="assets/projects/trainwise.svg" alt="TrainWise Mumbai Commuter App Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">Transit UX &amp; Web App</span>
+              <h3 class="case-title">TrainWise Mumbai — Commuter Transit Guide</h3>
+              <p class="case-desc">
+                An m-Indicator-inspired commuter web app for Mumbai local trains (Western, Central, Harbour), Metro lines, and connecting BEST buses. Features sub-second schedule lookups, live arrival countdowns, and platform indicators.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">React</span>
+                <span class="pill-chip">Vite</span>
+                <span class="pill-chip">Tailwind CSS</span>
+                <span class="pill-chip">Zustand</span>
+                <span class="pill-chip">Transit API</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://trainwise-mumbai.vercel.app" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="Open">
+                  Live App ↗
+                </a>
+                <a href="https://github.com/brysonnn1704/trainwise-mumbai" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="trainwise">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: CRAVE FOOD DELIVERY -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="web">
+            <div class="case-preview">
+              <span class="case-index">04</span>
+              <span class="case-status-badge">🟢 Live on Vercel</span>
+              <img src="assets/projects/crave.svg" alt="Crave Food Delivery App Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">E-Commerce &amp; Open Data</span>
+              <h3 class="case-title">Crave — Food Delivery &amp; Discovery Web App</h3>
+              <p class="case-desc">
+                A responsive food delivery application inspired by modern discovery platforms. Integrated with 75 real restaurant records from OpenStreetMap Overpass API and 444 authentic menu items with interactive cart and order tracking.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">React</span>
+                <span class="pill-chip">Vite</span>
+                <span class="pill-chip">OpenStreetMap</span>
+                <span class="pill-chip">Tailwind CSS</span>
+                <span class="pill-chip">GeoJSON</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://crave-food-delivery-rho.vercel.app" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="Open">
+                  Live App ↗
+                </a>
+                <a href="https://github.com/brysonnn1704/crave-food-delivery" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="crave">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: BANK MANAGEMENT SYSTEM -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="systems">
+            <div class="case-preview">
+              <span class="case-index">05</span>
+              <span class="case-status-badge">🔒 Google OAuth 2.0</span>
+              <img src="assets/projects/bank-system.svg" alt="BankMANCRCE Banking Application Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">Desktop Application &amp; Security</span>
+              <h3 class="case-title">BankMANCRCE — Secure Bank Management Suite</h3>
+              <p class="case-desc">
+                A desktop bank management suite built using JavaFX, MySQL, and Google OAuth 2.0. Supports balance transactions, transfer workflows, and a full administrative dashboard for user monitoring and activity auditing.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">Java</span>
+                <span class="pill-chip">JavaFX</span>
+                <span class="pill-chip">MySQL</span>
+                <span class="pill-chip">Google OAuth 2.0</span>
+                <span class="pill-chip">Security RBAC</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://github.com/brysonnn1704/BankMANCRCE" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub Repository ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="bank-system">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 06: FACE RECOGNITION (FACE2BEATS) -->
+          <article class="case-card project-card-item reveal-on-scroll" data-category="systems">
+            <div class="case-preview">
+              <span class="case-index">06</span>
+              <span class="case-status-badge">👁️ 60 FPS Computer Vision</span>
+              <img src="assets/projects/face-vision.svg" alt="Face Recognition Attendance Mockup" class="case-img" width="600" height="380" loading="lazy">
+            </div>
+            <div class="case-body">
+              <span class="case-category">Computer Vision &amp; AI</span>
+              <h3 class="case-title">Face2Beats — Biometric Attendance System</h3>
+              <p class="case-desc">
+                Automated facial recognition and attendance verification system built with Python and OpenCV. Features real-time facial landmark detection, anti-proxy liveness check, and automated CSV/database synchronization.
+              </p>
+              <div class="tech-tag-row">
+                <span class="pill-chip">Python</span>
+                <span class="pill-chip">OpenCV</span>
+                <span class="pill-chip">Haar Cascade</span>
+                <span class="pill-chip">NumPy</span>
+                <span class="pill-chip">Biometrics</span>
+              </div>
+              <div class="case-actions">
+                <a href="https://github.com/brysonnn1704" target="_blank" rel="noopener noreferrer" class="case-link" data-cursor-label="GitHub">
+                  GitHub Profile ↗
+                </a>
+                <button type="button" class="btn-case-detail case-detail-btn" data-project="face-vision">
+                  Deep Dive 📖
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CRAFT & SKILLS (BENTO GRID) -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span>Capabilities</span>
+            <span class="label-ja">• 技術スタック</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">
+            Craft, Tools &amp; Technical Stack
+          </h2>
+          <p class="section-desc">
+            Bridging the gap between human-centered interface design and robust, scalable software architecture.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+
+          <!-- Bento Card 1: UI/UX & Design -->
+          <div class="bento-card reveal-on-scroll">
+            <div class="bento-header">
+              <div class="bento-icon" aria-hidden="true">🎨</div>
+              <div>
+                <h3 class="bento-title">UI/UX &amp; Visual Design</h3>
+                <span class="bento-subtitle">Human-Centered Systems</span>
+              </div>
+            </div>
+            <div class="skills-pill-list">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Rapid Prototyping</span>
+              <span class="skill-tag">Usability Testing</span>
+              <span class="skill-tag">Typography</span>
+              <span class="skill-tag">WCAG 2.1 Accessibility</span>
+              <span class="skill-tag">Responsive Layouts</span>
+              <span class="skill-tag">Visual Storytelling</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Front-End Development -->
+          <div class="bento-card reveal-on-scroll">
+            <div class="bento-header">
+              <div class="bento-icon" aria-hidden="true">💻</div>
+              <div>
+                <h3 class="bento-title">Front-End Engineering</h3>
+                <span class="bento-subtitle">Fast, Accessible Web Applications</span>
+              </div>
+            </div>
+            <div class="skills-pill-list">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">HTML5 &amp; Semantic Web</span>
+              <span class="skill-tag">Modern CSS3 &amp; Grid</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">State Management (Zustand)</span>
+              <span class="skill-tag">Micro-Interactions</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 3: Backend & Cloud -->
+          <div class="bento-card reveal-on-scroll">
+            <div class="bento-header">
+              <div class="bento-icon" aria-hidden="true">⚙️</div>
+              <div>
+                <h3 class="bento-title">Backend &amp; Cloud Computing</h3>
+                <span class="bento-subtitle">Diploma in Cloud &amp; Big Data</span>
+              </div>
+            </div>
+            <div class="skills-pill-list">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Java &amp; JavaFX</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">AWS (EC2, RDS, DynamoDB)</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Big Data Foundations</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 4: Systems & Security -->
+          <div class="bento-card reveal-on-scroll">
+            <div class="bento-header">
+              <div class="bento-icon" aria-hidden="true">🛡️</div>
+              <div>
+                <h3 class="bento-title">Systems &amp; Cybersecurity</h3>
+                <span class="bento-subtitle">Network Rigor &amp; Creative Tools</span>
+              </div>
+            </div>
+            <div class="skills-pill-list">
+              <span class="skill-tag">Cybersecurity Foundations</span>
+              <span class="skill-tag">Computer Networking</span>
+              <span class="skill-tag">Linux &amp; Shell Scripting</span>
+              <span class="skill-tag">OpenCV Vision</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Premiere Pro</span>
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag">Blender 3D</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & JOURNEY TIMELINE -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span>Background</span>
+            <span class="label-ja">• 自己紹介</span>
+          </div>
+          <h2 id="about-heading" class="section-title">
+            About Bryson &amp; My Journey
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative -->
+          <div class="about-text reveal-on-scroll">
+            <p>
+              I am a <strong>Computer Engineering student</strong> pursuing my B.Tech alongside a specialized <strong>diploma in Cloud Computing and Big Data</strong> in Mumbai, India.
+            </p>
+            <p>
+              Unlike conventional developers who view design as an afterthought, I believe code and aesthetics belong in constant dialogue. My interest in <strong>UI/UX design, visual hierarchy, and graphic design</strong> informs how I write front-end code — obsessing over micro-interactions, responsive fluidity, and accessibility.
+            </p>
+            <p>
+              At the same time, my engineering background in <strong>networking, cloud architecture, and cybersecurity</strong> gives me the technical depth to build platforms that don't just look stunning, but handle real-world scale and edge cases securely.
+            </p>
+
+            <div class="values-grid">
+              <div class="value-item">
+                <h3 class="value-item-title">Inclusive by Design</h3>
+                <p>Every interface should welcome users of all digital literacies, with WCAG accessibility standards built into the foundation.</p>
+              </div>
+              <div class="value-item">
+                <h3 class="value-item-title">Thoughtful Motion</h3>
+                <p>Delightful micro-interactions that communicate intent, never slowing down the user and respecting reduced motion.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline reveal-on-scroll">
+            
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-year">2026 — PRESENT</div>
+              <h3 class="timeline-title">Disaster GIS &amp; Civic Tech Lead</h3>
+              <div class="timeline-company">SIH26191 / NDRF Relocation Project (RAKSHA-ZONE)</div>
+              <p class="timeline-desc">
+                Leading UI/UX architecture and decision engine integration for disaster relief agencies, modeling safe carrying capacities and evacuation lifeline routing.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-year">2025 — 2026</div>
+              <h3 class="timeline-title">Video Editor &amp; Creative Media Intern</h3>
+              <div class="timeline-company">Chrisel Technolab</div>
+              <p class="timeline-desc">
+                Produced high-engagement reels, festive motion graphics, and visual storytelling assets while gaining foundational insight into a cybersecurity enterprise.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-year">2023 — 2027</div>
+              <h3 class="timeline-title">B.Tech in Computer Engineering</h3>
+              <div class="timeline-company">Diploma in Cloud Computing &amp; Big Data</div>
+              <p class="timeline-desc">
+                Deep diving into data structures, algorithms, computer networks, distributed cloud systems, and user interface design.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO & MOTION GRAPHICS -->
+    <section id="video" class="video-section" aria-labelledby="video-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span>Visual Storytelling</span>
+            <span class="label-ja">• 映像制作</span>
+          </div>
+          <h2 id="video-heading" class="section-title">
+            Video Editing &amp; Motion Design
+          </h2>
+          <p class="section-desc">
+            Visual rhythm and storytelling. Before deepening into web code, I developed a passion for video editing, motion graphics, and pacing — creating reels, YouTube content, and branding videos.
+          </p>
+        </div>
+
+        <div class="video-container-card reveal-on-scroll">
+          <!-- Lightweight Interactive Video Facade (Instant load, zero third-party delay) -->
+          <div id="video-facade-container" class="video-player-wrapper">
+            <button id="video-facade-btn" class="video-facade-btn" type="button" aria-label="Play Bryson P Almeida Video Reel on YouTube">
+              <img src="https://img.youtube.com/vi/p54ananMxlM/hqdefault.jpg" alt="Video thumbnail for Bryson P Almeida Creative Showcase" class="video-facade-thumb" width="800" height="450" loading="lazy">
+              <span class="video-facade-play-badge" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </span>
+              <span class="video-facade-caption">Click to Play Video Reel (YouTube)</span>
+            </button>
+          </div>
+
+          <div class="video-info-bar">
+            <div class="video-info-text">
+              <h3>Featured Video Reel • Creative &amp; Motion Production</h3>
+              <p>Edited and motion-designed by Bryson. Experience spanning YouTube channel <strong>@sauceop8165</strong> and corporate social reels.</p>
+            </div>
+            <a href="https://www.youtube.com/@sauceop8165" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cursor-label="Watch">
+              Visit YouTube Channel 📺 ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span>Get in Touch</span>
+            <span class="label-ja">• お問い合わせ</span>
+          </div>
+          <h2 id="contact-heading" class="section-title">
+            Let's Build Something Meaningful Together.
+          </h2>
+          <p class="section-desc">
+            Have an internship opportunity, freelance project, or simply want to chat about UI/UX and engineering? Drop a note below or reach out directly!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Info -->
+          <div class="contact-card-box reveal-on-scroll">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--text-primary);">
+              Direct Channels 📬
+            </h3>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9375rem;">
+              Fastest response via email. Based in Mumbai, India (IST), open to both local and worldwide remote opportunities.
+            </p>
+
+            <div class="contact-info-list">
+              
+              <div class="contact-info-item">
+                <div class="contact-icon-pill" aria-hidden="true">✉️</div>
+                <div class="contact-info-text">
+                  <label>Email Address</label>
+                  <a href="mailto:brysoncollege12345@gmail.com">brysoncollege12345@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon-pill" aria-hidden="true">🐙</div>
+                <div class="contact-info-text">
+                  <label>GitHub</label>
+                  <a href="https://github.com/brysonnn1704" target="_blank" rel="noopener noreferrer">github.com/brysonnn1704 ↗</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon-pill" aria-hidden="true">📺</div>
+                <div class="contact-info-text">
+                  <label>YouTube Channel</label>
+                  <a href="https://www.youtube.com/@sauceop8165" target="_blank" rel="noopener noreferrer">@sauceop8165 ↗</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon-pill" aria-hidden="true">📍</div>
+                <div class="contact-info-text">
+                  <label>Location</label>
+                  <span>Mumbai, Maharashtra, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button type="button" class="btn-primary copy-email-btn" style="width: 100%;" data-cursor-label="Copy">
+                Copy Email Address 📋
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Form (Formspree) -->
+          <div class="contact-card-box reveal-on-scroll">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.25rem;">
+              Send a Direct Message ✍️
+            </h3>
+
+            <form id="contact-form" action="https://formspree.io/f/mreazlbk" method="POST">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span style="color: var(--accent-coral);">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Satoshi Nakamoto" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span style="color: var(--accent-coral);">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. hello@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message <span style="color: var(--accent-coral);">*</span></label>
+                <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Hi Bryson, I'd love to chat about..." required></textarea>
+              </div>
+
+              <button id="form-submit-btn" type="submit" class="btn-primary" style="width: 100%;" data-cursor-label="Send">
+                Send Message 🚀
+              </button>
+
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-copy">© 2026 Bryson P Almeida. Designed with soft Japanese minimalism &amp; coded with care.</p>
+        <p class="footer-sub">
+          B.Tech Computer Engineering • UI/UX Designer • Front-End Developer
         </p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/brysonnn1704" target="_blank" rel="noopener noreferrer" class="footer-social-link">GitHub</a>
+        <a href="https://www.youtube.com/@sauceop8165" target="_blank" rel="noopener noreferrer" class="footer-social-link">YouTube</a>
+        <a href="mailto:brysoncollege12345@gmail.com" class="footer-social-link">Email</a>
+        <a href="#main-content" class="footer-social-link">Back to Top ↑</a>
+      </div>
     </div>
-</section>
+  </footer>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-        <span>Java</span>
-        <span>Python</span>
-        <span>MySQL</span>
-        <span>Networking</span>
-        <span>Cybersecurity</span>
-        <span>Video Editing</span>
+  <!-- ================= PROJECT DETAIL MODAL ================= -->
+  <div id="project-modal-backdrop" class="modal-backdrop" aria-hidden="true"></div>
+  <div id="project-modal" class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title" inert hidden>
+    <div class="modal-header">
+      <div class="modal-title-box">
+        <h3 id="modal-title">Project Title</h3>
+        <span id="modal-badge" class="modal-badge">Category Badge</span>
+      </div>
+      <button id="project-modal-close" class="modal-close-btn" type="button" aria-label="Close project details dialog">✕</button>
     </div>
-</section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
+    <div class="modal-body">
+      <div class="modal-section-block">
+        <h4 class="modal-section-heading">Problem Statement &amp; Context</h4>
+        <p id="modal-problem"></p>
+      </div>
 
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Face Recognition & Attendance System</h3>
-            <p>Python + OpenCV based attendance system.</p>
-            <a href="https://github.com/brysonnn1704" target="_blank">View Project</a>
-        </div>
+      <div class="modal-section-block">
+        <h4 class="modal-section-heading">Design &amp; Engineering Solution</h4>
+        <p id="modal-solution"></p>
+      </div>
 
-        <div class="project-card">
-            <h3>Restaurant Billing System</h3>
-            <p>Java-based billing system.</p>
-            <a href="https://github.com/brysonnn1704" target="_blank">View Project</a>
-        </div>
+      <div class="modal-section-block">
+        <h4 class="modal-section-heading">Key Technical Highlights</h4>
+        <ul id="modal-highlights" class="modal-highlights-list"></ul>
+      </div>
 
-        <div class="project-card">
-            <h3>Bank Application</h3>
-            <p>Basic banking application.</p>
-            <a href="https://github.com/brysonnn1704" target="_blank">View Project</a>
-        </div>
+      <div class="modal-section-block">
+        <h4 class="modal-section-heading">Technologies Used</h4>
+        <div id="modal-tech" class="tech-tag-row"></div>
+      </div>
+
+      <div class="modal-actions">
+        <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Open Live Platform ↗
+        </a>
+        <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          View on GitHub ↗
+        </a>
+      </div>
     </div>
-</section>
+  </div>
 
-<!-- ================= VIDEO ================= -->
-<section id="video" class="video-section">
-    <h2>My Video Work</h2>
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-    <a class="video-link"
-       href="https://www.youtube.com/watch?v=p54ananMxlM"
-       target="_blank">
-        <img src="https://img.youtube.com/vi/p54ananMxlM/hqdefault.jpg" alt="YouTube Video">
-        <span class="play-button">▶</span>
-    </a>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-
-    <form action="https://formspree.io/f/mreazlbk" method="POST">
-        <label>Name</label>
-        <input type="text" name="name" required>
-
-        <label>Email</label>
-        <input type="email" name="email" required>
-
-        <label>Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 Bryson Almeida</p>
-    <div class="socials">
-        <a href="https://github.com/brysonnn1704" target="_blank">GitHub</a>
-        <a href="https://www.youtube.com/@sauceop8165" target="_blank">YouTube</a>
-        <a href="mailto:brysoncollege12345@gmail.com">Email</a>
-    </div>
-</footer>
-
-</div>
+  <!-- Minified Production JavaScript -->
+  <script src="main.min.js" defer></script>
 </body>
 </html>
